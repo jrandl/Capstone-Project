@@ -136,11 +136,45 @@ plt.close()
 print("Normalized Confusion Matrix plot saved as 'normalized_confusion_matrix.png'")
 
 # ================================
-# STEP 9: Save Model
+# STEP 9: Other Charts
+# ================================
+print("\n=== STEP 9: Create More Charts ===")
+# F1-score bar plot
+f1_scores = report_df.loc[label_encoder.classes_, 'f1-score']
+f1_scores.sort_values().plot(kind='barh', figsize=(10,6), title='F1-Score by Crime Category')
+plt.xlabel('F1-Score')
+plt.tight_layout()
+plt.savefig(r"C:\Users\Josiah Randleman\Documents\_Capstone Project\Models\f1_score_by_category.png")
+plt.close()
+
+
+importances = rf_model.feature_importances_
+feat_names = X.columns
+feat_importance_df = pd.Series(importances, index=feat_names).sort_values(ascending=False).head(5)
+
+plt.figure(figsize=(10, 6))
+sns.barplot(x=feat_importance_df, y=feat_importance_df.index)
+plt.title('Top 5 Feature Importances in Crime Prediction')
+plt.xlabel('Importance Score')
+plt.tight_layout()
+plt.savefig(r"C:\Users\Josiah Randleman\Documents\_Capstone Project\Models\feature_importance.png")
+plt.close()
+
+
+area_counts = crime_df_sampled['AREA NAME'].value_counts()
+area_counts.plot(kind='barh', figsize=(10,6), title='Crime Reports by LAPD Area')
+plt.xlabel('Number of Incidents')
+plt.tight_layout()
+plt.savefig(r"C:\Users\Josiah Randleman\Documents\_Capstone Project\Models\crime_by_area.png.png")
+plt.close()
+
+
+# ================================
+# STEP 10: Save Model
 # ================================
 import joblib
 
-print("\n=== STEP 9: Save Trained Model ===")
+print("\n=== STEP 10: Save Trained Model ===")
 
 # Save the Random Forest model
 model_save_path = r"C:\Users\Josiah Randleman\Documents\_Capstone Project\Models\random_forest_model.pkl"
