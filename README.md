@@ -107,6 +107,18 @@ Model saved as: `Models/random_forest_model.pkl`
 
 ---
 
+
+##  Final Report
+
+The complete capstone report, including detailed methodology, results, limitations, and visualizations, is available at:
+
+📄 [**Report/Josiah_Randleman_Capstone_Project_Report.pdf**](./Report/Josiah_Randleman_Capstone_Project_Report.pdf)
+
+This document summarizes all findings and provides a comprehensive overview of the entire analysis pipeline from data collection to predictive modeling.
+
+---
+
+
 ## Skills Demonstrated
 
 - Data Engineering and Cleaning (pandas, regex, datetime parsing)
