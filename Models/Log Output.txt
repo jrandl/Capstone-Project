@@ -1,0 +1,48 @@
+"C:\Users\Josiah Randleman\AppData\Local\Programs\Python\Python313\python.exe" "C:\Users\Josiah Randleman\Documents\_Capstone Project\Python Scripts\Predictive Analysis.py" 
+
+=== STEP 1: Load Pickle File ===
+DataFrame loaded from Pickle file.
+Original Dataset Shape: (1005149, 42)
+
+=== STEP 2: Sample 100,000 Rows ===
+Sampled Dataset Shape: (100000, 42)
+
+=== STEP 3: Feature and Target Selection ===
+Features and target prepared. Feature matrix shape: (100000, 5529)
+
+=== STEP 4: Train-Test Split ===
+Data split into training set (70000, 5529) and testing set (30000, 5529)
+
+=== STEP 5: Model Training ===
+Random Forest model trained.
+
+=== STEP 6: Model Prediction ===
+
+=== STEP 7: Model Evaluation ===
+
+=== Classification Report ===
+                    precision    recall  f1-score   support
+
+             Other       0.88      0.62      0.73      1475
+    Property Crime       0.93      0.97      0.95     14049
+Public Order Crime       0.90      0.74      0.81      3895
+    Sexual Offense       0.93      0.16      0.27       352
+     Violent Crime       0.88      0.99      0.93      7815
+White Collar Crime       0.90      0.85      0.87      2414
+
+          accuracy                           0.91     30000
+         macro avg       0.90      0.72      0.76     30000
+      weighted avg       0.91      0.91      0.90     30000
+
+
+=== Accuracy: 90.93% ===
+
+=== Confusion Matrix ===
+Confusion Matrix plot saved as 'confusion_matrix.png'
+Classification Report Heatmap saved as 'classification_report_heatmap.png'
+Normalized Confusion Matrix plot saved as 'normalized_confusion_matrix.png'
+
+=== STEP 9: Save Trained Model ===
+Random Forest model saved as 'random_forest_model.pkl'
+
+Process finished with exit code 0
