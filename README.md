@@ -133,7 +133,9 @@ This document summarizes all findings and provides a comprehensive overview of t
 ## References
 
 1. LAPD Crime Dataset: https://catalog.data.gov/dataset/crime-data-from-2020-to-present  
-2. LAPD MO Code Dictionary: https://data.lacity.org/api/views/d5tf-ez2w/files/...  
+2. LAPD MO Code Dictionary: https://data.lacity.
+org/api/views/d5tf-ez2w/files/8957b3b1-771a-4686-8f19-281d23a11f1b?
+download=true&filename=MO_CODES_Numerical_20180627.pdf
 3. LAPD Divisions Map: https://geohub.lacity.org/datasets/lahub::lapd-divisions/about  
 4. Project Source Code: https://github.com/jrandl/Capstone-Project
 
