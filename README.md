@@ -63,7 +63,7 @@ Visuals saved to: `Output/Charts/`
 
 ---
 
-## 🌍 Geospatial Mapping
+## Geospatial Mapping
 
 Mapped crimes by LAPD divisions and individual points using Folium:
 - Interactive choropleth map (`Crime_Map_LAPD_Divisions.html`)
@@ -74,7 +74,7 @@ Script: [`map code.py`](./Scripts/map%20code.py)
 
 ---
 
-## 🤖 Predictive Modeling
+## Predictive Modeling
 
 Model: `RandomForestClassifier (n_estimators=100)`  
 Target: `Crime_Category`
